@@ -100,6 +100,8 @@ import {AccordionModule} from "ngx-accordion";
     <!-- regular accordion with first opened group -->
     <accordion>
         <accordion-group heading="About me" [isOpened]="true">
+        // For Dynamic Conetent WE need to use 
+        <!-- <accordion-group *ngFor="let item of data.data; let i = index;"  [isOpened]='i == 0'> /-->
             Its all about me.
         </accordion-group>
         <accordion-group heading="Contacts">
